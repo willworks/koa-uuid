@@ -1,0 +1,37 @@
+{
+  "name": "koa-uuid",
+  "version": "1.0.0",
+  "description": "koa uuid middleware",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --harmony --reporter spec",
+    "test-cov": "node --harmony ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha",
+    "test-travis": "node --harmony ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --report lcovonly"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/willworks/koa-uuid.git"
+  },
+  "keywords": [
+    "uuid",
+    "middleware",
+    "koa",
+    "koa2"
+  ],
+  "author": "willworks",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/willworks/koa-uuid/issues"
+  },
+  "homepage": "https://github.com/willworks/koa-uuid#readme",
+  "dependencies": {
+    "co-mocha": "^1.2.0",
+    "uuid": "^3.1.0"
+  },
+  "devDependencies": {
+    "istanbul": "^0.4.5",
+    "koa": "^2.3.0",
+    "mocha": "^3.5.0",
+    "supertest": "^3.0.0"
+  }
+}
