@@ -4,9 +4,16 @@
   "description": "koa uuid middleware",
   "main": "index.js",
   "scripts": {
+    "precommit": "npm-debug-log-cleaner && lint-staged",
+    "lint": "eslint .",
+    "lint-fix": "eslint --fix .",
     "test": "./node_modules/.bin/mocha --harmony --reporter spec",
     "test-cov": "node --harmony ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha",
     "test-travis": "node --harmony ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --report lcovonly"
+  },
+  "lint-staged": {
+    "*.js": "eslint",
+    "*.{jpg,png}": "img-size-checker 100"
   },
   "repository": {
     "type": "git",
@@ -25,13 +32,21 @@
   },
   "homepage": "https://github.com/willworks/koa-uuid#readme",
   "dependencies": {
-    "co-mocha": "^1.2.0",
     "uuid": "^3.1.0"
   },
   "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^4.5.0",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-config-airbnb-base": "^11.3.2",
+    "eslint-plugin-import": "^2.7.0",
     "istanbul": "^0.4.5",
     "koa": "^2.3.0",
     "mocha": "^3.5.0",
-    "supertest": "^3.0.0"
+    "supertest": "^3.0.0",
+    "husky": "^0.14.3",
+    "img-size-checker": "^1.1.1",
+    "lint-staged": "^4.0.4",
+    "npm-debug-log-cleaner": "^1.0.2"
   }
 }
