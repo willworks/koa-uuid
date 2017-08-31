@@ -1,6 +1,6 @@
 {
   "name": "koa-uuid",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "koa uuid middleware",
   "main": "index.js",
   "scripts": {
