@@ -1,8 +1,8 @@
 # koa-uuid
 
 [![NPM version][npm-image]][npm-url]
+[![github tag][github-tag]][github-url]
 [![Build status][travis-image]][travis-url]
-[![Test coverage][coveralls-image]][coveralls-url]
 [![Dependency Status][david-image]][david-url]
 [![License][license-image]][license-url]
 [![Downloads][downloads-image]][downloads-url]
@@ -30,17 +30,13 @@ app.use(uuid())
 
 [npm-image]: https://img.shields.io/npm/v/koa-uuid.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/koa-uuid
-[github-tag]: http://img.shields.io/github/tag/willworks/koa-uuid.svg?style=flat-square
+[github-tag]:
 [github-url]: https://github.com/willworks/koa-uuid/tags
 [travis-image]: https://img.shields.io/travis/willworks/koa-uuid.svg?style=flat-square
 [travis-url]: https://travis-ci.org/willworks/koa-uuid
-[coveralls-image]: https://img.shields.io/coveralls/willworks/koa-uuid.svg?style=flat-square
-[coveralls-url]: https://coveralls.io/r/willworks/koa-uuid?branch=master
 [david-image]: http://img.shields.io/david/willworks/koa-uuid.svg?style=flat-square
-[david-url]: https://david-dm.org/willworks/koa-uuid
+[david-url]: https://david-dm.org/willworks/koa-uuidhttp://img.shields.io/github/tag/willworks/koa-uuid.svg?style=flat-square
 [license-image]: http://img.shields.io/npm/l/koa-uuid.svg?style=flat-square
 [license-url]: LICENSE
 [downloads-image]: http://img.shields.io/npm/dm/koa-uuid.svg?style=flat-square
 [downloads-url]: https://npmjs.org/package/koa-uuid
-[gittip-image]: https://img.shields.io/gittip/jonathanong.svg?style=flat-square
-[gittip-url]: https://www.gittip.com/jonathanong/
