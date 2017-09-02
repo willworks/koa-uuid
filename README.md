@@ -53,7 +53,7 @@ app.use(uuid(options))
 
 ## Attention
 
-configuration ```signed: true``` require app.keys, otherwise signed will be ```false```
+configuration ```signed: true``` require app.keys, otherwise signed will always be ```false```
 ```js
 const uuid = require('koa-uuid')
 const Koa = require('koa')
