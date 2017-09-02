@@ -15,15 +15,55 @@ koa uuid middleware
 $ npm install koa-uuid
 ```
 
+## Configuration
+
+default configuration
+
+```js
+const options = {
+  signed: false,
+  maxAge: 1000 * 60 * 60 * 24 * 365 * 10,
+  httpOnly: true,
+}
+```
+
 ## Example
 
 ```js
 const uuid = require('koa-uuid')
 const Koa = require('koa')
 
+// options is not reuqire and will be assign
+const options = {
+  maxAge,
+  expires,
+  path,
+  domain,
+  secure,
+  httpOnly,
+  sameSite,
+  signed,
+  overwrite,
+  ...
+}
+
 const app = new Koa()
-app.use(uuid())
+app.use(uuid(options))
 ```
+
+## Attention
+
+configuration ```signed: true``` require app.keys, otherwise signed will be ```false```
+```js
+const uuid = require('koa-uuid')
+const Koa = require('koa')
+
+const app = new Koa()
+
+app.keys = ['secret', 'key'];
+app.use(uuid({ signed: true }));
+```
+
 ## License
 
   MIT
