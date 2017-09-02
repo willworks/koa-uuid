@@ -1,6 +1,6 @@
 {
   "name": "koa-uuid",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "koa uuid middleware",
   "main": "index.js",
   "scripts": {
@@ -12,8 +12,7 @@
     "test-travis": "node --harmony ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --report lcovonly"
   },
   "lint-staged": {
-    "*.js": "eslint",
-    "*.{jpg,png}": "img-size-checker 100"
+    "*.js": "eslint"
   },
   "repository": {
     "type": "git",
@@ -45,7 +44,6 @@
     "mocha": "^3.5.0",
     "supertest": "^3.0.0",
     "husky": "^0.14.3",
-    "img-size-checker": "^1.1.1",
     "lint-staged": "^4.0.4",
     "npm-debug-log-cleaner": "^1.0.2"
   }
